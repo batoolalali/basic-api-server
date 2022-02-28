@@ -16,6 +16,6 @@ let sequelize = new Sequelize(DATABASE_URL);
 
 module.exports={
     db: sequelize,
-    Pood: food(sequelize,DataTypes),
+    Food: food(sequelize,DataTypes),
     Clothes: clothes(sequelize, DataTypes)
 }

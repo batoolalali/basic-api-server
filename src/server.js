@@ -7,6 +7,7 @@ const notFoundHandler= require('./error-handlers/404');
 const errorHandler= require('./error-handlers/500');
 const logger = require('./middleware/logger');
 const clothesRouter = require('./routes/clothes');
+const foodRouter = require('./routes/food')
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(cors());
 
 app.use(logger);
 app.use(clothesRouter);
+app.use(foodRouter)
 
 
 
